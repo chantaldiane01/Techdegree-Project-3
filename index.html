@@ -21,7 +21,6 @@
 
 	<form>
 		<form action="index.html" method="POST">
-			<h1>Sign Up</h1>
 			<p class="hint">* - required field</p>
 
 			<fieldset>
@@ -29,10 +28,10 @@
 			<legend>Contact Information</legend>
 
 			<lable for="name">Full Name *</lable>
-			<input type="text" id="name" name="user_name">
+			<input type="text" id="name" name="user_name" placeholder="Required">
 
 			<label for="email">Email Address *</label>
-			<input type="email" id="email" name="user_email">
+			<input type="email" id="email" name="user_email" placeholder="Required">
 
 			<label for="phone">Phone Number</label>
 			<input type="tel" id="phone" name="user_phone">
@@ -45,6 +44,7 @@
 
             <label for="state">State</label>
             <select id="state" name="user_state">
+            <option disabled selected>Choose State</option>
             	<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
 				<option value="AZ">Arizona</option>
