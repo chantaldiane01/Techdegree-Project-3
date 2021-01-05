@@ -176,7 +176,7 @@ textarea:focus,
 
 
 /*------MEDIA QUERIES------*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   .main-content,
   .main-header {
