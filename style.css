@@ -40,6 +40,12 @@ body {
 	font-size: 2em;
 }
 
+.main-content {
+	border-top: solid 2px #191d2e;
+	max-width: 90%;
+	margin: 2px auto;
+}
+
 form {
 	max-width: 300px;
 	border-radius: 10px;
@@ -48,7 +54,8 @@ form {
 }
 
 h1,
-p {
+p,
+button {
 	margin: 0 0 20px 0;
 	text-align: center;
 }
