@@ -10,7 +10,7 @@ body {
 	background: #f5f5f5;
 	color: #191d2e;
 	font-family: 'Merriweather', serif;
-	font-size: .80em;
+	font-size:  .9em;
 	margin: 0 auto;
 }
 
@@ -21,12 +21,13 @@ body {
 	width: 100%;
 	display: inline-block;
 	padding-top: 25px;
+	font-size: .8em;
 }
 
 .main-header {
-	max-width: 70%;
+	max-width: 95%;
 	border-bottom: solid 4px #191d2e;
-	margin: 10px auto;
+	margin: 10px 10px 4px 10px;
 	padding-bottom: 20px;
 }
 
@@ -36,14 +37,37 @@ body {
 	padding-right: 20px;
 }
 .signupheader {
-	padding-top: 25px;
-	font-size: 2em;
+	padding-top: 50px;
+	font-size: 1.5em;
+	background: #e0e0e0;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+#contactinfo {
+	margin-top: 1.75em;
+	border-bottom: solid 2px #191d2e;
+	margin-bottom: 20px;
+}
+
+#contactinfo input,
+select {
+	height: 3em;
+}
+
+#contactinfo label {
+	display: block;
+}
+
+
+#contactinfo #zip {
+	width: 50%;
 }
 
 .main-content {
 	border-top: solid 2px #191d2e;
-	max-width: 70%;
-	margin: 2px auto;
+	max-width: 95%;
+	margin: 2px 10px 10px 10px;
 	padding-top: 20px;
 }
 
@@ -72,23 +96,26 @@ select {
 	background-color: #e0e0e0;
   	border: none;
   	font-size: 1em;
-  	height: auto;
-  	margin: 0;
-  	outline: 0;
+  	height: 3.5em;
   	padding: 15px;
   	width: 100%;
   	margin-bottom: 30px;
+  	border-radius: 10px;
 }
 
 legend {
 	font-size: 1.5em;
-	justify-content: left
+	justify-content: left;
 }
 
 .newsletterhead {
 	font-weight: bold;
 	font-size: 1.8em;
-	margin-bottom: 10px;
+	margin-bottom: 1px;
+	padding: 10px 10px 10px 10px;
+	font-size: 1.5em;
+	background: #e0e0e0;
+	border-radius: 10px;
 }
 
 label {
@@ -102,13 +129,15 @@ label.light {
 }
 
 input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
 	text-align: right;
+	font-style: oblique; 
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 4px 10px 0;
+  margin: 10px 4px 10px 4px;
 }
 
 .button {
@@ -125,11 +154,41 @@ input[type="checkbox"] {
 
 }
 
+textarea {
+	height: 100px;
+}
+
+input:focus, 
+textarea:focus,
+#state:focus {
+    outline: 3px dotted #5cb8a7; /*BETTER accessibility*/
+    background-color: #e0e0e0;
+    transition: background-color 0.5s ease-out;
+}
+
+input:focus, 
+textarea:focus,
+#state:focus {
+	box-shadow: 0px .2em 2.5em #5cb8a7;
+	transform: scale(1.03);
+}
+
+
 
 /*------MEDIA QUERIES------*/
 @media (min-width: 769px) {
 
-  
+  .main-content,
+  .main-header {
+  	max-width: 550px;
+  	align-items: center;
+  	margin: auto;
+  }
+
+  .main-header {
+  	margin-bottom: 5px;
+  	margin-top: 10px;
+  }
 
   .form {
   	max-width: 500px;
@@ -139,9 +198,25 @@ input[type="checkbox"] {
   }
 
   .flex {	
- 	 display:flex;
- 	 flex-direction: row;
+ 	 display: flex;
+ 	 align-items: center;
+ 	 justify-content: flex-start;
   }
 
+   #contactinfo input,
+   #contactinfo select {
+     width: 80%;
+     margin-bottom: 1em;
+     display: inline-block;
+    }
 
+   #contactinfo label {
+ 	  display: inline-block;
+ 	  width: 25%;
+ 	  display: inline-block;
+   }
+
+   #contactinfo #zip {
+		width: 35%;
+}
 }

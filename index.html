@@ -23,30 +23,30 @@
 
 	<section class="main-content">
 		<form action="index.html" method="POST">
-			<fieldset>
+			<fieldset  id="contactinfo">
 
-			<legend><strong>Contact Information</strong></legend>
+			<legend id="contactheader"><strong>Contact Information</strong></legend>
 			<p class="hint">* - required field</p>
 
 		<div class="flex">
 			<label for="name">Full Name *</label>
-			<input type="text" id="name" name="user_name" placeholder="Required">
-
+			<input type="text" id="name" name="user_name" placeholder="Required  " required="">
+		</div>
 		<div class="flex">
 			<label for="email">Email Address *</label>
-			<input type="email" id="email" name="user_email" placeholder="Required">
+			<input type="email" id="email" name="user_email" placeholder="Required  " required>
 		</div>
 		<div class="flex">
 			<label for="phone">Phone Number</label>
-			<input type="tel" id="phone" name="user_phone">
+			<input type="tel" id="phone" name="user_phone" placeholder="Phone Number  ">
 		</div>
 		<div class="flex">
 			<label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
+            <input type="text" id="address" name="user_address" placeholder="Street Address  ">
         </div>
         <div class="flex">
             <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <input type="text" id="city" name="user_city" placeholder="City  ">
         </div>
         <div class="flex">
             <label for="state">State</label>
@@ -107,7 +107,7 @@
         </div>
         <div class="flex">
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user_zip">
+            <input type="text" id="zip" name="user_zip" placeholder="Zip Code  ">
         </div>
             </fieldset>
 
@@ -126,8 +126,7 @@
             	<input type="checkbox" id="javascript_news" value="interested_javascript" name="user_news">
             	<label class="light" for="javascript_news">Javascript News</label><br><br> <!--there is a line break here-->
 
-            	<label>Newsletter Format</label> <br>
-            	<!--there is a line break here-->
+            	<label>Newsletter Format</label>
             	<input type="radio" id="html_format" value="html_format" name="preferred_format">
             	<label for="html_format" class="light">HTML</label><br>
             	<!--there is a line break here-->
@@ -140,12 +139,12 @@
 
 				</fieldset>
 
-				<button class="button" type="sumbit">Sign Up</button>
+				<button class="button" type="submit">Sign Up</button>
 	</form>
 	</section>
 	<footer>
-		<p class="copyright">Copyright The Code Review</p>
-
+		<p class="copyright"><em>Copyright The Code Review</em></p>
+	</footer>
 
 
 </body>
